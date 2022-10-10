@@ -160,7 +160,7 @@ h3 {
 }
 
 @media (max-width: 450px) {
-  . calculator {
+  . container {
    Width: 80%;
   }
   .btn {
