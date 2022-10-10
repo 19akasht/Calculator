@@ -167,7 +167,8 @@ h3 {
   }
   .btn {
     width: 3.5rem;
-    margin: 10px 0 0 4px;
+    margin: 10px 6px;
+    font-size: 24px;
     padding: 10px;
   }
   .reset {
