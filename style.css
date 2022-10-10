@@ -161,7 +161,7 @@ h3 {
 
 @media (max-width: 450px) {
   . container {
-   Width: 80%;
+   Width: 60%;
   }
   .btn {
     width: 3.9rem;
