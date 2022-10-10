@@ -160,16 +160,19 @@ h3 {
 }
 
 @media (max-width: 450px) {
-  . container {
-   Width: 60%;
+  .container {
+    width: 80%;
+  }
+  .input-field {
+    padding: 20px 0;
   }
   .btn {
-    width: 3.9rem;
+    width: 3.5rem;
     margin: 10px 0 0 4px;
     padding: 10px;
   }
   .reset {
-    width: 8.4rem;
+    width: 7.8rem;
     margin-bottom: 20px;
   }
   .calc {
