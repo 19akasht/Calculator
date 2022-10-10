@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <main id="toggle-theme">
+    <div class="container">
+      <div class="header-field">
+        <div class="header-heading">
+          <h3>Calc</h3>
+        </div>
+        <div class="theme">
+          <h4>Themes</h4>
+          <h4 class="theme" id="toggle1">1</h4>
+          <h4 class="theme" id="toggle">2</h4>
+        </div>
+      </div>
+      <div class="output-field">
+        <input type="text" name="output-screen" id="screen" class="screen">
+      </div>
+      <div class="input-field">
+        <div class="calc">
+          <button class="btn" onclick="calculate('7')">7</button>
+          <button class="btn" onclick="calculate('8')">8</button>
+          <button class="btn" onclick="calculate('9')">9</button>
+          <button class="btn res" onclick="del()">DEL</button>
+        </div>
+        <div class="calc">
+          <button class="btn" onclick="calculate('4')">4</button>
+          <button class="btn" onclick="calculate('5')">5</button>
+          <button class="btn" onclick="calculate('6')">6</button>
+          <button class="btn" onclick="calculate('+')">+</button>
+        </div>
+        <div class="calc">
+          <button class="btn" onclick="calculate('1')">1</button>
+          <button class="btn" onclick="calculate('2')">2</button>
+          <button class="btn" onclick="calculate('3')">3</button>
+          <button class="btn" onclick="calculate('-')">-</button>
+        </div>
+        <div class="calc">
+          <button class="btn" onclick="calculate('.')">.</button>
+          <button class="btn" onclick="calculate('0')">0</button>
+          <button class="btn" onclick="calculate('/')">/</button>
+          <button class="btn" onclick="calculate('*')">x</button>
+        </div>
+        <div class="calc">
+          <button class="btn reset res" onclick="reset()">RESET</button>
+          <button class="btn reset" onclick="equalto()">=</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

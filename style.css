@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background: hsl(222, 26%, 31%);
+  --toggle_1-background-keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  --color: #fff;
+
+  --reset-key-background: hsl(225, 21%, 49%);
+  --reset-key-shadow: hsl(224, 28%, 35%);
+  --equal-key-background-toggle: hsl(6, 63%, 50%);
+  --equal-key-shadow: hsl(6, 70%, 34%);
+  --button-key-background: hsl(30, 25%, 89%);
+  --button-key-shadow: hsl(28, 16%, 65%);
+
+  --darkGrayish-blue: hsl(221, 14%, 31%);
+  --white: #fff;
+}
+
+.toggle-theme {
+  --main-background: hsl(0, 0%, 90%);
+  --color: #000;
+  --toggle_1-background-keypad-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+
+  --reset-key-background: hsl(185, 42%, 37%);
+  --reset-key-shadow: hsl(185, 58%, 25%);
+  --equal-key-background-toggle: hsl(25, 98%, 40%);
+  --equal-key-shadow: hsl(25, 99%, 27%);
+  --button-key-background: hsl(45, 7%, 89%);
+  --button-key-shadow: hsl(35, 11%, 61%);
+  --color: #000;
+}
+
+.theme {
+  background-color: var(--equal-key-background-toggle);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+#toggle-theme {
+  background: var(--main-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+h4,
+h3 {
+  color: var(--white);
+}
+
+.container {
+  max-width: 400px;
+  width: 90%;
+}
+
+.header-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+}
+
+#toggle1 {
+  padding: 3px 7px;
+  border: 1px solid #fff;
+}
+
+.theme h4 {
+  margin: 0 10px;
+  color: var(--color);
+}
+
+.header-heading h3 {
+  color: var(--color);
+}
+
+.output-field .screen {
+  background-color: var(--screen-background);
+  width: 100%;
+  height: 80px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: right;
+  color: var(--color);
+  padding: 0 20px;
+}
+
+.input-field {
+  width: 100%;
+  background-color: var(--toggle_1-background-keypad-background);
+  padding: 25px 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  width: 4.5rem;
+  height: 3rem;
+  margin: 0px 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: var(--button-key-background);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--darkGrayish-blue);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--white);
+}
+
+.reset {
+  width: 10.5rem;
+  margin-left: 10px;
+  height: 3rem;
+  background-color: var(--equal-key-background-toggle);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.res {
+  margin-right: 10px;
+  background-color: var(--reset-key-background);
+  color: var(--white);
+}
+
+.reset:hover {
+  background-color: var(--equal-key-shadow);
+}
+
+.res:hover {
+  background-color: var(--reset-key-shadow);
+}
+
+@media (max-width: 450px) {
+  .btn {
+    width: 3.9rem;
+    margin: 10px 0 0 4px;
+    padding: 10px;
+  }
+  .reset {
+    width: 8.4rem;
+    margin-bottom: 20px;
+  }
+  .calc {
+    margin: 0 18px;
+  }
+}
