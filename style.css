@@ -160,6 +160,9 @@ h3 {
 }
 
 @media (max-width: 450px) {
+  . calculator {
+   Width: 80%;
+  }
   .btn {
     width: 3.9rem;
     margin: 10px 0 0 4px;
