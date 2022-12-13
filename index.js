@@ -35,3 +35,33 @@ document.getElementById("toggle1").addEventListener("click", () => {
   document.getElementById("toggle1").style.border = "1px solid var(--white)";
   document.getElementById("toggle").style.border = "none";
 });
+
+
+
+// btn.addEventListener("click", async () => {
+//   const url = await fetch("https://jsonplaceholder.typicode.com/photos");
+//   const items = await url.json();
+//   display(items);
+//   console.log(items);
+// });
+
+// function display(items) {
+//   items.forEach((item) => {
+//     createItem(item);
+//   });
+// }
+
+// function createItem(item) {
+//   const card = document.createElement("div");
+//   card.style.marginTop = "20px";
+//   card.style.border = "2px solid black";
+//   const photo = document.createElement("img");
+//   const heading = document.createElement("h1");
+
+//   photo.src = item.thumbnailUrl;
+//   heading.innerHTML = item.title;
+
+//   root.append(card);
+//   card.append(photo);
+//   card.append(heading);
+// }
